@@ -25,7 +25,7 @@ Logs:
 '''
 
 def analyze_logs(logs, threats, risk_score):
-    api_key = st.secrets.get("OPENAI_API_KEY", None)
+    api_key = st.secrets.get("OPENAI_API_KEY")
 
     if not api_key:
         return "⚠️ Add OPENAI_API_KEY to Streamlit Secrets before deployment."
